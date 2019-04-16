@@ -98,7 +98,7 @@ export default class ColorPicker extends PureComponent {
             background: `linear-gradient(90deg, ${colors.join(",")})`, /* 标准的语法 */
           }}
         >
-          <button className={stylei.sliderBtn}></button>
+          <button onClick={()=>{}} className={stylei.sliderBtn}></button>
         </div>
         <div className={stylei.colorshow} style={{background:colorSelect}}></div>
       </div>
