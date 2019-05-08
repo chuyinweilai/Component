@@ -1,0 +1,88 @@
+// #Upload-box{
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.UploadsBox{
+  width: 104px;
+  height: 104px;
+  position: relative;
+  border: 1px dashed #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.anticonSpin{
+  animation: loadingCircle 1s infinite linear;
+}
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.uploadButton{
+  background: #fafafa; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.UploadsLabel{
+  width: 104px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+}
+
+.UploadsInput{
+  display: none;
+}
+
+.UploadsMask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  // margin: -12px 0 0 -25px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+
+  .preView:first-child{
+    margin-right: 10px;
+  }
+  
+  .preView{
+    // height: 24px;
+    // line-height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
